@@ -7,13 +7,21 @@ import { AppComponent } from './app.component';
 import { AddEmpComponent } from './add-emp/add-emp.component';
 
 import { AdminLoginComponent } from './admin-login/admin-login.component';
+import { SearchEmpComponent } from './search-emp/search-emp.component';
+import { EditEmpComponent } from './edit-emp/edit-emp.component';
+import { ViewEmpComponent } from './view-emp/view-emp.component';
+import { DeleteEmpComponent } from './delete-emp/delete-emp.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddEmpComponent,
 
-    AdminLoginComponent
+    AdminLoginComponent,
+      SearchEmpComponent,
+      EditEmpComponent,
+      ViewEmpComponent,
+      DeleteEmpComponent
 
   ],
   imports: [
