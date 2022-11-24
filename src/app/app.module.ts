@@ -12,6 +12,7 @@ import { EditEmpComponent } from './edit-emp/edit-emp.component';
 import { ViewEmpComponent } from './view-emp/view-emp.component';
 import { DeleteEmpComponent } from './delete-emp/delete-emp.component';
 import { RouterModule, Routes } from '@angular/router';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 
 const myRoute:Routes=
@@ -51,7 +52,8 @@ const myRoute:Routes=
       SearchEmpComponent,
       EditEmpComponent,
       ViewEmpComponent,
-      DeleteEmpComponent
+      DeleteEmpComponent,
+      NavBarComponent
 
   ],
   imports: [
