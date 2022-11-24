@@ -11,7 +11,7 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 @NgModule({
   declarations: [
     AppComponent,
-    AddEmpComponent
+    AddEmpComponent,
 
     AdminLoginComponent
 
