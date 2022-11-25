@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./view-emp.component.css']
 })
 export class ViewEmpComponent {
-
+    name="Sufail",
+    designation="Software engineer trainee",
+    salary=6666464,
+    email="sample@123456.com"
 }
