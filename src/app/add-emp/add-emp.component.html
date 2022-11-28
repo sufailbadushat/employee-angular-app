@@ -15,16 +15,16 @@
                     </div>
                     <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6">
                         <label for="" class="form-label text-dark">Name</label>
-                        <input type="text" placeholder="Enter employee name" class="form-control">
+                        <input name="name" [(ngModel)]="name" type="text" placeholder="Enter employee name" class="form-control">
                     </div>
                    
                     <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6">
                         <label for="" class="form-label text-dark">Designation</label>
-                        <input type="text" placeholder="Enter Designation" class="form-control">
+                        <input name="designation" [(ngModel)]="designation" type="text" placeholder="Enter Designation" class="form-control">
                     </div>
                     <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6">
                         <label for="" class="form-label text-dark">Salary</label>
-                        <input type="text" placeholder="Enter Salary" class="form-control">
+                        <input name="salary" [(ngModel)]="salary" type="text" placeholder="Enter Salary" class="form-control">
                     </div>
                     <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6">
                         <label for="" class="form-label text-dark">Phone number</label>
@@ -36,7 +36,7 @@
                     </div>
                     <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6">
                         <label for="" class="form-label text-dark">Company name</label>
-                        <input type="text" placeholder="Enter employee company name" class="form-control">
+                        <input name="company" [(ngModel)]="company" type="text" placeholder="Enter employee company name" class="form-control">
                     </div>
                     <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6">
                         <label for="" class="form-label text-dark">Year of experience</label>
@@ -44,7 +44,7 @@
                     </div>
                     
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                       <a href="" class="btn btn-primary">Add employee</a>
+                       <a (click)="readValues()" class="btn btn-primary">Add employee</a>
                     </div>
                 </div>
             </div>

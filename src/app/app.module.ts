@@ -13,35 +13,36 @@ import { ViewEmpComponent } from './view-emp/view-emp.component';
 import { DeleteEmpComponent } from './delete-emp/delete-emp.component';
 import { RouterModule, Routes } from '@angular/router';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { FormsModule } from '@angular/forms';
 
 
-const myRoute:Routes=
-[
-  {
-    path:"",
-    component:AdminLoginComponent
-  },
-  {
-    path:"add",
-    component:AddEmpComponent
-  },
-  {
-    path:"search",
-    component:SearchEmpComponent
-  },
-  {
-    path:"delete",
-    component:DeleteEmpComponent
-  },
-  {
-    path:"view",
-    component:ViewEmpComponent
-  },
-  {
-    path:"edit",
-    component:EditEmpComponent
-  }
-]
+const myRoute: Routes =
+  [
+    {
+      path: "",
+      component: AdminLoginComponent
+    },
+    {
+      path: "add",
+      component: AddEmpComponent
+    },
+    {
+      path: "search",
+      component: SearchEmpComponent
+    },
+    {
+      path: "delete",
+      component: DeleteEmpComponent
+    },
+    {
+      path: "view",
+      component: ViewEmpComponent
+    },
+    {
+      path: "edit",
+      component: EditEmpComponent
+    }
+  ]
 
 @NgModule({
   declarations: [
@@ -49,17 +50,18 @@ const myRoute:Routes=
     AddEmpComponent,
 
     AdminLoginComponent,
-      SearchEmpComponent,
-      EditEmpComponent,
-      ViewEmpComponent,
-      DeleteEmpComponent,
-      NavBarComponent
+    SearchEmpComponent,
+    EditEmpComponent,
+    ViewEmpComponent,
+    DeleteEmpComponent,
+    NavBarComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
